@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 df = pd.read_excel('precos.xlsx')
 
 df.head(10)
+# [324204 rows x 28 columns]
 df.shape[0]
 
 list = df['Tipo'].unique()
