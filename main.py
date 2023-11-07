@@ -8,4 +8,6 @@ list = df['Tipo'].unique()
 
 df_escola = df.query("Tipo=='Escola'")[["Tipo", "produto marca", "Preço"]]
 
-print(df_escola)
+media = df_escola.groupby(['Tipo', 'produto marca']).mean()
+
+print(media)
