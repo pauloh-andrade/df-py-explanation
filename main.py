@@ -6,4 +6,6 @@ df.head(10)
 
 list = df['Tipo'].unique()
 
-print(list)
+df_escola = df.query("Tipo=='Escola'")[["Tipo", "produto marca", "Preço"]]
+
+print(df_escola)
