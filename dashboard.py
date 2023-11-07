@@ -15,3 +15,6 @@ with col1:
     df_tipo = df.query(f"Tipo=='{tipo}'")
 
     df_tipo[['Coleta', 'Tipo', 'Semana', 'Estabelecimento', 'produto_marca', 'Preço']]
+
+with col2:
+    
